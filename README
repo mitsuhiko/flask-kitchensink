@@ -5,7 +5,7 @@
 
     ~ What is this?
 
-      This repository contains a script that builds a tarball
+      This repository contains a script that builds a zip archive
       of Flask, Werkzeug and Jinja2 together with an example
       project that shows how Flask can be used.
 

@@ -4,9 +4,8 @@ WERKZEUG_VERSION=0.6.2
 FLASK_VERSION=0.6.1
 JINJA_VERSION=2.5.5
 
-rm -rf sink
-mkdir -p "sink"
-cd sink
+mkdir -p _sink
+cd _sink
 
 mkdir tmp
 cd tmp
@@ -37,3 +36,9 @@ rmdir tmp
 
 # Example code
 cp -R ../example-code/* .
+
+# Package it up
+cd ..
+mv _sink Flask-Kitchensink-${FLASK_VERSION}
+zip -r Flask-Kitchensink-${FLASK_VERSION}.zip Flask-Kitchensink-${FLASK_VERSION}
+rm -rf Flask-Kitchensink-${FLASK_VERSION}
