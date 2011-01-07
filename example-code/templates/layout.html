@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+  {%- block htmlhead %}
+    <title>{% block title %}Welcome{% endblock %} | Hello Flask!</title>
+    <link rel=stylesheet href="{{ url_for('.static', filename='style.css') }}" type=text/css>
+  {%- endblock %}
+  </head>
+  <body>
+    <div class=page>
+      <div class=header>
+        <h1>Hello Flask!</h1>
+      </div>
+      <div class=contents>
+        {% block body %}{% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
