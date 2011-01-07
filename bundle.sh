@@ -36,4 +36,4 @@ cd ..
 rmdir tmp
 
 # Example code
-cp ../example-code/* .
+cp -R ../example-code/* .

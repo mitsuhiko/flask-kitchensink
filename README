@@ -1,0 +1,24 @@
+
+                  // Flask-Kitchensink //
+
+             Example project plus dependencies
+
+    ~ What is this?
+
+      This repository contains a script that builds a tarball
+      of Flask, Werkzeug and Jinja2 together with an example
+      project that shows how Flask can be used.
+
+    ~ Why?
+
+      Because the longer it takes people to dive into a project
+      the less likely it will be that they even try.  Some other
+      frameworks lower the barrier a lot by providing just a
+      single file to download and get started.
+
+    ~ What do I need?
+
+      OS X, Linux or Windows with an installed Python interpreter.
+      The files here are ment for developers of the script only,
+      Flask and the Kitchensink can be downloaded from the Flask
+      website.
