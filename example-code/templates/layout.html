@@ -11,6 +11,15 @@
       <div class=header>
         <h1>Hello Flask!</h1>
       </div>
+      {%- with messages = get_flashed_messages() %}
+        {%- if messages %}
+          <ul class=flashes>
+          {%- for message in messages %}
+            <li>{{ message }}</li>
+          {%- endfor %}
+          </ul>
+        {%- endif %}
+      {%- endwith %}
       <div class=contents>
         {% block body %}{% endblock %}
       </div>
