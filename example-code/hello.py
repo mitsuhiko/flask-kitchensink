@@ -2,7 +2,7 @@
 from flask import Flask, render_template, flash
 
 app = Flask(__name__)
-app.secret_key = 'development secret key'
+app.secret_key = 'development secret key, changes this for production'
 app.debug = True
 
 
